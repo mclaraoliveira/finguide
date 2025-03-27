@@ -1,0 +1,63 @@
+body {
+    background-color: #201924;
+}
+
+main {
+    padding-bottom: 20px;
+}
+
+.titulo {
+    color: #E2E2E2;
+    font-family: 'Murecho', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.input-altura {
+    height: 50px;
+}
+
+.form-label {
+    color: #C1C0C1;
+    font-family: 'Murecho', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.form-select,
+.form-control {
+    background-color: #322C3A;
+    color: #8C8C8C;
+    border: none;
+    font-family: 'Murecho', sans-serif;
+    font-size: 18pxpx;
+}
+
+.form-select:focus,
+.form-control:focus {
+    background-color: #322C3A;
+    color: #E2E2E2;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #8C8C8C;
+    opacity: 1;
+}
+
+.btn-custom {
+    background-color: #AD8AFF;
+    color: #240E2E;
+    border: none;
+    font-family: 'Murecho', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.btn-custom:hover {
+    background-color: #8d5dfc;
+}
