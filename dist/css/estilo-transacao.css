@@ -6,6 +6,14 @@ main {
     padding-bottom: 20px;
 }
 
+.logo-ipad {
+    display: none;
+}
+
+.pagina-extrato {
+    display: block;
+}
+
 .titulo {
     color: #E2E2E2;
     font-family: 'Murecho', sans-serif;
@@ -34,7 +42,7 @@ main {
     color: #8C8C8C;
     border: none;
     font-family: 'Murecho', sans-serif;
-    font-size: 18pxpx;
+    font-size: 18px;
 }
 
 .form-select:focus,
@@ -49,7 +57,7 @@ main {
     opacity: 1;
 }
 
-.btn-custom {
+.btn-roxo {
     background-color: #AD8AFF;
     color: #240E2E;
     border: none;
@@ -58,6 +66,40 @@ main {
     font-size: 23px;
 }
 
-.btn-custom:hover {
+.btn-roxo:hover {
     background-color: #8d5dfc;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .pagina-transacao {
+        background-color: #322C3A;
+    }
+
+    .logo-celular {
+        display: none;
+    }
+
+    .logo-ipad {
+        display: block;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .form-select,
+    .form-control {
+        background-color: #201924;
+    }
+
+    .form-select:focus,
+    .form-control:focus {
+    background-color: #201924;
+    color: #E2E2E2;
+    box-shadow: none;
+    }
+
+    .pagina-extrato {
+        display: block;
+    }
 }
