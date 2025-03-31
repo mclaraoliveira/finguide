@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fin Guide</title>
+    <link rel="icon" href="/dist/imagens/favicon-dollar.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilo-transacao.css">
     <link href="https://fonts.googleapis.com/css2?family=Murecho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <link rel="stylesheet" href="./css/estilo-transacao.css">
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <!-- Seção de transação ocupando 1/3 da tela em telas grandes -->
+<body class="vh-100">
+        <div class="row g-0 h-100">
+            <!-- Seção de transação -->
             <section class="pagina-transacao col-lg-4">
                 <section>
-                    <header class="py-5">
+                    <header class="py-5 mx-lg-auto text-center">
                         <h1 class="d-inline-flex align-items-center">
                             <img src="./imagens/logo-android-finguide-1.png" alt="Logo Fin Guide" class="logo-celular">
                             <img src="./imagens/logo-ipad-finguide.png" alt="Logo Fin Guide" class="logo-ipad">
@@ -45,71 +49,104 @@
                                 <input type="text" class="form-control input-altura" id="valor" placeholder="R$ 0,00">
                             </div>
                         </div>
-                        <div class="mt-4 d-flex flex-column gap-4 mb-4">
+                        <div class="limpar text-end my-0">
+                            <a href="#" class="link-light">Limpar</a>
+                        </div>
+                        <div class="mt-1 mt-lg-3 d-flex flex-column gap-4 mb-4">
                             <button type="button" class="btn btn-roxo">Adicionar</button>
-                            <button type="button" class="btn btn-roxo">Visualizar Extrato</button>
+                            <button type="button" class="btn btn-roxo d-lg-none">Visualizar Extrato</button>
                         </div>
                     </main>
                 </section>
             </section>
 
-            <!-- Seção do extrato ocupando 2/3 da tela em telas grandes -->
-            <section class="pagina-extrato col-lg-8">
-                <section class="container pt-0 pb-5 px-4">
-                    <section>
-                        <header class="py-5">
-                            <h1 class="d-inline-flex align-items-center">
-                                <img src="/dist/imagens/logo-android-finguide-2.png" alt="Logo Fin Guide" class="logo-celular">
-                            </h1>
-                        </header>
-                    </section>
-                    <h2 class="titulo mb-4">Extrato</h2>
-                    <table class="table table-dark table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Mercadoria</th>
-                            <th scope="col">Quantidade</th>
-                            <th scope="col">Valor</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>-</td>
-                            <td>IPHONE 16</td>
-                            <td>1</td>
-                            <td>R$ 8.000,00</td>
-                          </tr>
-                          <tr>
-                            <td>-</td>
-                            <td>Igor</td>
-                            <td>2</td>
-                            <td>R$ 0,02</td>
-                          </tr>
-                          <tr>
-                            <td>-</td>
-                            <td>IPHONE 16</td>
-                            <td>1</td>
-                            <td>R$ 8.000,00</td>
-                          </tr>
-                          <tr>
-                            <td>-</td>
-                            <td>Igor</td>
-                            <td>2</td>
-                            <td>R$ 0,02</td>
-                          </tr>
-                          <tr>
-                            <td colspan="3" class="text-end"><strong>TOTAL</strong></td>
-                            <td><strong>R$ -15.999,96</strong></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <div class="mt-4 d-flex flex-column mb-4">
+            <!-- Seção do extrato -->
+            <section class="pagina-extrato col-lg-8 px-4 d-lg-flex flex-lg-column justify-content-lg-center min-vh-100 position-relative">
+                <section>
+                    <header class="py-5 py-lg-0">
+                        <h1 class="d-inline-flex align-items-center">
+                            <img src="/dist/imagens/logo-android-finguide-2.png" alt="Logo Fin Guide" class="logo-celular">
+                        </h1>
+                    </header>
+                </section>
+                
+                <div class="trecho-titulos d-flex justify-content-between align-items-center mb-2 mt-lg-5 position-lg-absolute">
+                    <h2 class="titulo">Extrato</h2>
+                    <div class="saldo">
+                        <h2 class="palavra-em-roxo">Saldo</h2>
+                        <h2 class="palavra-em-roxo">R$00,00</h2>
+                    </div>
+                </div>
+            
+                <div class="d-lg-flex flex-lg-column justify-content-lg-center flex-grow-1">
+                    <div class="tabela-customizada">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Mercadoria</th>
+                                    <th>Qtd</th>
+                                    <th>Valor</th>
+                                    <th class="d-none d-md-table-cell"></th>
+                                </tr>
+                            </thead>
+                            <tr style="height: 15px; background: transparent; border: none;"></tr>
+                            <tbody>
+                                <tr>
+                                    <td>-</td>
+                                    <td>iPhone 16</td>
+                                    <td>1</td>
+                                    <td>R$ 8.000,00</td>
+                                    <td class="d-none d-md-table-cell">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>+</td>
+                                    <td>Igor</td>
+                                    <td>2</td>
+                                    <td>R$ 0,02</td>
+                                    <td class="d-none d-md-table-cell">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>iPhone 16</td>
+                                    <td>1</td>
+                                    <td>R$ 8.000,00</td>
+                                    <td class="d-none d-md-table-cell">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>+</td>
+                                    <td>Igor</td>
+                                    <td>2</td>
+                                    <td>R$ 0,02</td>
+                                    <td class="d-none d-md-table-cell">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td class="texto-roxo">Total</td>
+                                    <td></td>
+                                    <td class="texto-roxo">R$ 8.000,00</td>
+                                    <td class="d-none d-md-table-cell"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            
+                    <div class="mt-4 d-flex flex-column mb-4 d-lg-none">
                         <button type="button" class="btn btn-roxo">Nova Transação</button>
                     </div>
-                </section>
+                </div>
             </section>
-        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

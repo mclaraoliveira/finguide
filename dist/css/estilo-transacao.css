@@ -27,6 +27,11 @@ main {
     height: 50px;
 }
 
+input:focus, textarea:focus, select:focus {
+    border: 2px solid black !important;
+    outline: none !important;
+}
+
 .form-label {
     color: #C1C0C1;
     font-family: 'Murecho', sans-serif;
@@ -66,9 +71,79 @@ main {
     font-size: 23px;
 }
 
-.btn-roxo:hover {
+.btn:hover, .btn:focus {
     background-color: #8d5dfc;
 }
+
+
+
+.palavra-em-roxo {
+    color: #AD8AFF;
+    font-family: 'Murecho', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+/* TABELA */
+.tabela-customizada {
+    background-color: #322C3A;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.tabela-customizada tbody tr:nth-child(odd) {
+    background-color: #201924;
+}
+
+/* Arredonda a primeira célula de cada linha*/
+.tabela-customizada tbody tr td:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Arredonda a última célula de cada linha*/
+.tabela-customizada tbody tr td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tabela-customizada tfoot tr td:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.tabela-customizada tfoot tr td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #B3B3B3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #201924;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #201924;
+}
+
+.texto-roxo {
+    color: #AD8AFF;
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .pagina-transacao {
