@@ -119,6 +119,10 @@ input:focus, textarea:focus, select:focus {
     border-bottom-right-radius: 5px;
 }
 
+tbody tr:first-child {
+    height: 15px;
+  }
+
 table {
     width: 100%;
     border-collapse: collapse;

@@ -15,7 +15,7 @@
 </head>
 <body class="vh-100">
         <div class="row g-0 h-100">
-            <!-- Seção de transação -->
+            <!-- SEÇÃO DE TRANSAÇÃO -->
             <section class="pagina-transacao col-lg-4">
                 <section>
                     <header class="py-5 mx-lg-auto text-center">
@@ -53,15 +53,15 @@
                             <a href="#" class="link-light">Limpar</a>
                         </div>
                         <div class="mt-1 mt-lg-3 d-flex flex-column gap-4 mb-4">
-                            <button type="button" class="btn btn-roxo">Adicionar</button>
-                            <button type="button" class="btn btn-roxo d-lg-none">Visualizar Extrato</button>
+                            <button type="button" class="botao-adicionar btn btn-roxo">Adicionar</button>
+                            <button type="button" class="botao-extrato btn btn-roxo d-lg-none">Visualizar Extrato</button>
                         </div>
                     </main>
                 </section>
             </section>
 
-            <!-- Seção do extrato -->
-            <section class="pagina-extrato col-lg-8 px-4 d-lg-flex flex-lg-column justify-content-lg-center min-vh-100 position-relative">
+            <!-- SEÇÃO DE EXTRATO -->
+            <section class="pagina-extrato col-lg-8 px-4 d-none d-lg-flex flex-lg-column justify-content-lg-center min-vh-100 position-relative">
                 <section>
                     <header class="py-5 py-lg-0">
                         <h1 class="d-inline-flex align-items-center">
@@ -80,7 +80,7 @@
             
                 <div class="d-lg-flex flex-lg-column justify-content-lg-center flex-grow-1">
                     <div class="tabela-customizada">
-                        <table>
+                        <table id="tabela-extrato">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -90,44 +90,7 @@
                                     <th class="d-none d-md-table-cell"></th>
                                 </tr>
                             </thead>
-                            <tr style="height: 15px; background: transparent; border: none;"></tr>
                             <tbody>
-                                <tr>
-                                    <td>-</td>
-                                    <td>iPhone 16</td>
-                                    <td>1</td>
-                                    <td>R$ 8.000,00</td>
-                                    <td class="d-none d-md-table-cell">
-                                        <i class="fa-regular fa-trash-can"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>+</td>
-                                    <td>Igor</td>
-                                    <td>2</td>
-                                    <td>R$ 0,02</td>
-                                    <td class="d-none d-md-table-cell">
-                                        <i class="fa-regular fa-trash-can"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>-</td>
-                                    <td>iPhone 16</td>
-                                    <td>1</td>
-                                    <td>R$ 8.000,00</td>
-                                    <td class="d-none d-md-table-cell">
-                                        <i class="fa-regular fa-trash-can"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>+</td>
-                                    <td>Igor</td>
-                                    <td>2</td>
-                                    <td>R$ 0,02</td>
-                                    <td class="d-none d-md-table-cell">
-                                        <i class="fa-regular fa-trash-can"></i>
-                                    </td>
-                                </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
@@ -143,13 +106,13 @@
                 </div>
             
                     <div class="mt-4 d-flex flex-column mb-4 d-lg-none">
-                        <button type="button" class="btn btn-roxo">Nova Transação</button>
+                        <button type="button" class="botao-nova-transacao btn btn-roxo">Nova Transação</button>
                     </div>
                 </div>
             </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
