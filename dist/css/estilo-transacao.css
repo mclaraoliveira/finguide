@@ -6,6 +6,8 @@ main {
     padding-bottom: 20px;
 }
 
+/* LOGOS */
+
 .logo-ipad {
     display: none;
 }
@@ -30,6 +32,8 @@ main {
     line-height: 100%;
     letter-spacing: 0%;
 }
+
+/* INPUTS E FORMS */
 
 .input-altura {
     height: 50px;
@@ -70,6 +74,8 @@ input:focus, textarea:focus, select:focus {
     opacity: 1;
 }
 
+/* BOTÕES */
+
 .btn-roxo {
     background-color: #AD8AFF;
     color: #240E2E;
@@ -95,6 +101,25 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* TABELA */
+
+#tabela-extrato {
+    font-size: 11px;
+}
+
+#tabela-extrato tbody {
+    display: block;
+    max-height: 192px;
+    overflow-y: auto;
+} 
+
+#tabela-extrato thead,
+#tabela-extrato tfoot,
+#tabela-extrato tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
 .tabela-customizada {
     background-color: #322C3A;
     border-radius: 8px;
@@ -201,11 +226,16 @@ tfoot td {
         padding-right: 30px !important;
     }
 
+
     .botao-wrapper {
         display: flex;
         align-items: center;
         padding-top: 100px;
     }
+
+    #tabela-extrato tbody {
+        max-height: 300px;
+    } 
 
 }
 
@@ -241,6 +271,11 @@ tfoot td {
     .pagina-extrato {
         display: block;
     }
+
+    #tabela-extrato {
+        font-size: 13px;
+    }
+
 }
 
 @media (min-width: 1025px) {
@@ -274,4 +309,12 @@ tfoot td {
     .pagina-extrato {
         display: block;
     }
+
+    #tabela-extrato {
+        font-size: 13px;
+    }
+
+    #tabela-extrato tbody {
+        max-height: 300px;
+    } 
 }
