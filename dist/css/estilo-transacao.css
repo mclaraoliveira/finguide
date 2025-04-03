@@ -10,6 +10,14 @@ main {
     display: none;
 }
 
+.logo-ipad-vertical {
+    display: none;
+}
+
+.logo-desktop {
+    display: none;
+}
+
 .pagina-extrato {
     display: block;
 }
@@ -149,6 +157,58 @@ tfoot td {
 }
 
 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .pagina-transacao {
+        background-color: #201924;
+    }
+
+    .logo-celular {
+        display: none;
+    }
+
+    .logo-ipad-vertical {
+        display: block;
+    }
+
+    .btn-roxo {
+        background-color: #AD8AFF;
+        color: #240E2E;
+        border: none;
+        font-family: 'Murecho', sans-serif;
+        font-weight: 600;
+        font-size: 23px;
+        width: 350px;
+    }
+
+    .botoes-transacao {
+        align-items: center;
+    }
+
+    .limpar {
+        padding-bottom: 100px;
+    }
+
+    header {
+        margin-bottom: 100px;
+    }
+
+    .pagina-extrato {
+        .logo-celular {
+            display: block;
+        }
+
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .botao-wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+}
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .pagina-transacao {
         background-color: #322C3A;
@@ -164,6 +224,39 @@ tfoot td {
 
     .titulo {
         font-size: 28px;
+    }
+
+    .form-select,
+    .form-control {
+        background-color: #201924;
+    }
+
+    .form-select:focus,
+    .form-control:focus {
+    background-color: #201924;
+    color: #E2E2E2;
+    box-shadow: none;
+    }
+
+    .pagina-extrato {
+        display: block;
+    }
+}
+
+@media (min-width: 1025px) {
+    .pagina-transacao {
+        background-color: #322C3A;
+    }
+    .logo-celular {
+        display: none;
+    }
+
+    .logo-ipad {
+        display: none;
+    }
+
+    .logo-desktop {
+        display: block;
     }
 
     .form-select,
