@@ -1,7 +1,7 @@
-import { Armazenamento } from '../utils/armazenamento.js';
-import { formatarMoeda } from '../utils/formatarMoeda.js';
-import { gerarNovoId } from '../utils/gerarnovoid.js';
-import { validarNomeProduto, validarQuantidade, validarValor } from '../utils/validacoes.js';
+import { Armazenamento } from './armazenamento.js';
+import { formatarMoeda } from './formatarmoeda.js';
+import { gerarNovoId } from './gerarnovoid.js';
+import { validarNomeProduto, validarQuantidade, validarValor } from './validacoes.js';
 // FUNÇÃO PRA SELECIONAR ELEMENTOS DO DOM
 export function configurarGestaoTransacoes() {
     const formTransacao = document.querySelector('main');

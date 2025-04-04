@@ -1,5 +1,5 @@
-import { alternarVisibilidadeSecao } from './js/utils/visibilidadeSecoes.js';
-import { configurarGestaoTransacoes } from './js/components/gerenciarTransacoes.js';
+import { alternarVisibilidadeSecao } from './visibilidadeSecoes.js';
+import { configurarGestaoTransacoes } from './gerenciarTransacoes.js';
 document.addEventListener('DOMContentLoaded', () => {
     alternarVisibilidadeSecao();
     configurarGestaoTransacoes();
