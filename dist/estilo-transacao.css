@@ -181,6 +181,10 @@ tfoot td {
     color: #AD8AFF;
 }
 
+.botao-excluir {
+    cursor: pointer;
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .pagina-transacao {
